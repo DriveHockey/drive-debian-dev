@@ -1,0 +1,1 @@
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/drive-debian-dev.gpg] https://AlexJLaroche.github.io/drive-debian-dev ./" > drive-debian-dev.list
