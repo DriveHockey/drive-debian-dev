@@ -1,0 +1,51 @@
+name: Configure Debian Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # if Commit message contains [skip ci] then skip the workflow
+      - name: Check for [skip ci] in commit message
+        run: |
+          if git log -1 --pretty=%B | grep -q "\[skip ci\]"; then
+            echo "[skip ci] found in commit message. Skipping the workflow."
+            exit 78
+          fi
+
+      - name: Configuring Package Repository
+        run: |
+          dpkg-scanpackages --multiversion . > Packages
+          gzip -k -f Packages
+
+      - name: Creating Release Files
+        run: |
+          apt-ftparchive release . > Release
+          gpg --default-key "alexandre.laroche@drivehockey.com" -abs -o - Release > Release.gpg
+          gpg --default-key "alexandre.laroche@drivehockey.com" --clearsign -o - Release > InRelease
+
+
+      - name: Setup SSH for Local Repo
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SELF_ACCESS }}
+
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "drivedebiandev@drivehockey.com"
+          git config --global user.name "DriveDebianDev"
+          git add .
+          git commit -m "[skip ci] Updated Package"
+
+      - name: Push changes to drive-debian repository
+        run: |
+          git push origin main
