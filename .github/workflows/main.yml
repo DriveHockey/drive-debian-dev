@@ -26,9 +26,13 @@ jobs:
           dpkg-scanpackages --multiversion . > Packages
           gzip -k -f Packages
 
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+
       - name: Creating Release Files
         run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY}}" | gpg --import
           apt-ftparchive release . > Release
           gpg --default-key "alexandre.laroche@drivehockey.com" -abs -o - Release > Release.gpg
           gpg --default-key "alexandre.laroche@drivehockey.com" --clearsign -o - Release > InRelease
