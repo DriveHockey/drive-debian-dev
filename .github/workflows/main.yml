@@ -28,6 +28,7 @@ jobs:
 
       - name: Creating Release Files
         run: |
+          gpg --import ${{ secrets.GPG_PRIVATE_KEY }}
           apt-ftparchive release . > Release
           gpg --default-key "alexandre.laroche@drivehockey.com" -abs -o - Release > Release.gpg
           gpg --default-key "alexandre.laroche@drivehockey.com" --clearsign -o - Release > InRelease
