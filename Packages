@@ -40,3 +40,17 @@ Section: python
 Priority: optional
 Description: API for DWM1001 Bluetooth Access
 
+Package: driveapi
+Version: 0.0.1-8
+Architecture: all
+Maintainer: Alexandre Laroche <alexandre.laroche@drivehockey.com>
+Installed-Size: 19
+Filename: ./driveapi_0.0.1-8_all.deb
+Size: 1652
+MD5sum: f457292b59e43c4109819082e8a04811
+SHA1: 9145ac52891e27c316595783330e5095ba93c756
+SHA256: 4df4b2047c5da613ccdccd6f8c36ba4215b98eaaa020d540182299f9a4cd8d2f
+Section: python
+Priority: optional
+Description: API for DWM1001 Bluetooth Access
+
