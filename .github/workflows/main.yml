@@ -7,6 +7,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      content: write
     runs-on: ubuntu-latest
 
     steps:
@@ -36,12 +38,6 @@ jobs:
           apt-ftparchive release . > Release
           gpg --default-key "alexandre.laroche@drivehockey.com" -abs -o - Release > Release.gpg
           gpg --default-key "alexandre.laroche@drivehockey.com" --clearsign -o - Release > InRelease
-
-
-      - name: Setup SSH for Local Repo
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.SELF_ACCESS }}
 
 
       - name: Commit changes
