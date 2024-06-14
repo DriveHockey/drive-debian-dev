@@ -1,1 +1,1 @@
-deb [signed-by=/etc/apt/trusted.gpg.d/drive-debian-dev.gpg] https://AlexJLaroche.github.io/drive-debian-dev ./
+deb [signed-by=/etc/apt/trusted.gpg.d/drive-debian-dev.gpg] https://drivehockey.github.io/drive-debian-dev ./
