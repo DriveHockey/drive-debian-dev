@@ -1,8 +1,6 @@
 Package: drive-ack
-Architecture: all
 Version: 1.0.2-1
-Priority: optional
-Section: python
+Architecture: all
 Maintainer: Alexandre Laroche <alexandre.laroche@drivehockey.com>
 Installed-Size: 28
 Filename: ./drive-ack_1.0.2-1_all.deb
@@ -10,16 +8,14 @@ Size: 3698
 MD5sum: 9033ed80e35d43e9eeeda1f0b2ec858a
 SHA1: 68eab7814c19198d2f772107d3826acbd4c873dc
 SHA256: 2220ed2f66d90d16fd1a7e76113ebfff79a4e0f6f893e86fe1c4a18597678e71
-SHA512: 5b7fab4645d45109174e0e2a8915aec8ee7ef9ebffd2b839cb63c63e9cdba17d6f4a79e45aa4c44620372b6fc9a6bb88c288fec79bcd20895c3831bedf3f9b0f
+Section: python
+Priority: optional
 Description: Ensures that Downlink and Uplink Messages are properly Acknowledged
 
 Package: libssl1.1
-Architecture: amd64
-Version: 1.1.1w-0+deb11u1
-Multi-Arch: same
-Priority: optional
-Section: libs
 Source: openssl
+Version: 1.1.1w-0+deb11u1
+Architecture: amd64
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Installed-Size: 4128
 Depends: libc6 (>= 2.25), debconf (>= 0.5) | debconf-2.0
@@ -29,7 +25,9 @@ Size: 1565664
 MD5sum: 69e2487f8e0d1c8aefed3e92cb618154
 SHA1: 975578b8e6cb8a0eb0734f34f3fa59e5507d9053
 SHA256: aadf8b4b197335645b230c2839b4517aa444fd2e8f434e5438c48a18857988f7
-SHA512: 709a72531e8f39dcb4ccd7322cc8a1929b912bf820ae18658290856da04397a4722d7a7c6f019c189eb615d79212120b8638e5efa4c6131703c9b6938b5cd2a4
+Section: libs
+Priority: optional
+Multi-Arch: same
 Homepage: https://www.openssl.org/
 Description: Secure Sockets Layer toolkit - shared libraries
  This package is part of the OpenSSL project's implementation of the SSL
@@ -39,11 +37,8 @@ Description: Secure Sockets Layer toolkit - shared libraries
  It provides the libssl and libcrypto shared libraries.
 
 Package: openssl
-Architecture: amd64
 Version: 1.1.1w-0+deb11u1
-Multi-Arch: foreign
-Priority: optional
-Section: utils
+Architecture: amd64
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Installed-Size: 1471
 Depends: libc6 (>= 2.15), libssl1.1 (>= 1.1.1)
@@ -53,7 +48,9 @@ Size: 859144
 MD5sum: 6989fb3b64564c455a95e4e063bdc92e
 SHA1: 9fd8f941ae5a3f15a264e394342e2271306216f9
 SHA256: 04873d74cbe86bad3a9901f6e57f1150040eba9891b443c5c975a72a97238e35
-SHA512: f9194279348261643bca8b709e7bec5824e87a25323a0d1e932cff6362dc823b9df2d6fff0ec52efe6acba80e1a3e86bb1b6b4badb204265c22aa0b5c7ba7eec
+Section: utils
+Priority: optional
+Multi-Arch: foreign
 Homepage: https://www.openssl.org/
 Description: Secure Sockets Layer toolkit - cryptographic utility
  This package is part of the OpenSSL project's implementation of the SSL
