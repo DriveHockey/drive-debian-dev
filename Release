@@ -1,17 +1,24 @@
-Date: Thu, 08 May 2025 03:43:28 +0000
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Wed, 13 May 2026 00:45:36 +0000
+Description: DriveHockey custom package repository
+Label: drive-debian-dev
+Origin: DriveHockey
+Suite: stable
 MD5Sum:
- 7607276fb0540a98d1ad120e0ed7bf79             2622 Packages
- 1eb6e1d2936892ce727b6fd993dffefe             1236 Packages.gz
- 43cf77d915288de68b25039adf65fb51               38 Release
+ 0eeff9be352b92135691175546173ae2             3033 Packages
+ 35353494f9e5541773ffb8c5fdb1c872             1497 Packages.gz
+ e250b8156205365dc4dd9e52d23e37cd              202 Release
 SHA1:
- 8cd2189fbf6e1fc322bfc110b8e5d53e8de89516             2622 Packages
- 8946cf9d4fd6f2d5526cf99c82729d92bb189efb             1236 Packages.gz
- 38ebd04f6a58d5ed1f138ad5228266042f4295ed               38 Release
+ cff36c3189cbdbb7c1c90de31b20cd10268fe3d0             3033 Packages
+ 1148d5445b22bef33ea8bd4a645930ee7c77a075             1497 Packages.gz
+ 3d18eb6056249762a12c0179f6fa2c924ce20950              202 Release
 SHA256:
- c74baf5b15612d62676c6251e31df6b052d1bdc7406fa9b8e4ae06449aad3338             2622 Packages
- 888656cdd1e152e8ce57de41bbd2a5486690faa89bfbac9e97109d83ae32f22d             1236 Packages.gz
- ac46d3cdd6f1bec0e640ea5b3ef556525d97bdd48568f4665f65821e740611d0               38 Release
+ 550a51b76d7c40af1debec2882e124f6be5189efd9ce522cbf481f9edf6d1e14             3033 Packages
+ 86204ffb52eecff209aa806ee423757ff3030a6a0cd931dff8f12b7f3d1c00fc             1497 Packages.gz
+ 7910308361c2b8d773d13a3f057a5d76d56a6c37d640d2641fffd506b60d89b1              202 Release
 SHA512:
- bc16c25fb908c5bacf178f4d05968a537deac900a5d279abbc7f4852472a78d5e1302a9caf9dfa7906b9bab1c6da5e3287e3f60906659efe59b9ac4c4cf3a786             2622 Packages
- 67c76862059ab91843b6804c7de4076fb81310cff7a471b546d42fec0c3c989e327e61c01e01cd38e5b02587c3563060a8d958348aa945b351bf779854efafe4             1236 Packages.gz
- 4d678b580df9d97c4ded60597c7d442718585132531e30e8ecbad88782a62ffc2d893f2c588863d892762082c25376fed47520c140d1362b69d956b790d1dcca               38 Release
+ 04768843dccf75062c8cfaf39badb10efeded19e54a41b4080472ca69cfd7431b6b99d880a9a654fab251de94ecf4eff10a1dd8c42c7ee11f61daeeeb658914c             3033 Packages
+ 31cc2640669900636a4b4e8d0033cd9aea7d1d4356a5f88d77c919513fbe2726c5d63678bfc30c1c4eb2d5d709daed9ad7eeca410c8de542eb25f6f7b9b01960             1497 Packages.gz
+ b11bc311f486254a74b28b9094bc88efb161feb943a3e500c429c45d1db05df05685e64ab82fc6b17808c3009646deeee655b9ee4fa36e55eb6a32ab090bb95e              202 Release
